@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -16,5 +18,303 @@ h1 {
   font-size: 17px;
   line-height: 30px;
   font-family: "PTSans", "Arial", sans-serif;
-  font-weght: bold;
+  font-weight: bold;
+}
+
+.clearfix {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.main-header {  
+  min-height: 320px;
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;  
+  min-height: 320px;  
+}
+
+.header-top {
+  min-height: 42px;  
+}
+
+.header-top div, .header-top form {
+  float: left;
+  margin-right: 20px;
+}
+
+.header-top form {
+  margin-right: 160px;
+}
+
+.header-middle {
+  min-height: 158px;
+  font-size: 0px;
+  padding-top: 35px;
+}
+
+.header-middle div {
+  display: inline-block;
+  vertical-align: top;   
+  font-size: 16px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.header-middle div:last-child {
+  margin-right: 0;
+}
+
+.main-navigation {
+  min-height: 60px;
+}
+
+.catalog-item  {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.catalog-item {
+  width: 300px;
+  margin-right: 20px;
+  min-height: 123px;
+}
+
+.catalog-item:nth-child(n+3) {
+  margin-right: 0;
+}
+
+.catalog-slider {
+  width: 621px;
+  height: 267px;
+  float: left;
+
+}
+
+.catalog-item:nth-child(n+4) {
+  float: right;
+}
+
+.catalog {
+  margin-bottom: 53px;
+}
+
+.product-and-makers-title {
+  margin-bottom: 20px;
+}
+
+.product-and-makers-title h2 {
+  float: left;
+}
+
+.product-and-makers-title a {
+  float: right;
+}
+
+.product-and-makers-catalog {
+  min-height: 318px;  
+  font-size: 0;
+}
+
+.product-and-makers-item, .product-and-makers-catalog>a {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.product-and-makers-item {
+  min-height: 318px;
+}
+
+.product-and-makers-item:last-child {
+  margin-right: 0;
+}
+
+.product-and-makers-catalog>a {
+  height: 145px;
+}
+
+.product-and-makers-catalog>a:nth-child(4n) {
+  margin-right: 0;   
+}
+
+ .services {
+  margin-top: 85px;
+  padding-top: 65px;
+  padding-bottom: 102px;
+}
+
+.services h2 {
+  margin-bottom: 35px;
+}
+
+.services p {
+  width: 400px;
+  margin-bottom: 75px;
+}
+
+.services-slider-links {
+  width: 240px;
+  height: 182px;
+  float: left;
+  margin-right: 80px;  
+}
+
+.services-slider-item {
+  float: right;
+  width: 300px;
+}
+
+.services-slider-item p {
+  width: 280px;
+}
+
+.about-company {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.left-column {
+  float: left;
+  width: 540px;
+  margin-right: 100px;
+}
+
+.right-column {
+  float: right;
+  width: 300px;
+}
+
+.footer-top .logo, .footer-middle p {
+  float: left;
+  width: 380px;
+  margin-right: 10px;
+}
+
+.footer-top nav, .footer-middle nav {
+  float: right;
+  width: 550px;
+}
+
+.footer-bottom {
+  padding-top: 35px;
+  padding-bottom: 31px;
+}
+
+.footer-copyright {
+  float: left;
+  margin-right: 160px; 
+  width: 230px;
+}
+
+.footer-social {
+  float: left;
+  width: 160px;
+  margin-right: 90px; 
+}
+
+.footer-feedback {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.footer-develop {
+  float: right;
+  width: 140px;
+}
+/*Обводки*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  outline: 1px solid yellow;
+  background: rgba(255, 255, 000, 0.2);
+}
+
+body > * > * > * > * {
+  outline: 1px solid blue;
+  background: rgba(000, 000, 255, 0.2);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
 }
