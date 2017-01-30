@@ -27,7 +27,7 @@ h1 {
   clear: both;
 }
 
-.main-header {  
+.main-header {
   min-height: 320px;
   margin-bottom: 60px;
 }
@@ -35,12 +35,12 @@ h1 {
 .container {
   width: 940px;
   padding: 0 10px;
-  margin: 0 auto;  
-  min-height: 320px;  
+  margin: 0 auto;
+  min-height: 320px;
 }
 
 .header-top {
-  min-height: 42px;  
+  min-height: 42px;
 }
 
 .header-top div, .header-top form {
@@ -60,7 +60,7 @@ h1 {
 
 .header-middle div {
   display: inline-block;
-  vertical-align: top;   
+  vertical-align: top;
   font-size: 16px;
   width: 300px;
   margin-right: 20px;
@@ -72,6 +72,7 @@ h1 {
 
 .main-navigation {
   min-height: 60px;
+
 }
 
 .catalog-item  {
@@ -106,10 +107,12 @@ h1 {
 
 .product-and-makers-title {
   margin-bottom: 20px;
+  min-height: 89px;
 }
 
 .product-and-makers-title h2 {
   float: left;
+
 }
 
 .product-and-makers-title a {
@@ -117,7 +120,7 @@ h1 {
 }
 
 .product-and-makers-catalog {
-  min-height: 318px;  
+  min-height: 318px;
   font-size: 0;
 }
 
@@ -143,13 +146,13 @@ h1 {
 }
 
 .product-and-makers-catalog>a:nth-child(4n) {
-  margin-right: 0;   
+  margin-right: 0;
 }
 
  .services {
-  margin-top: 85px;
-  padding-top: 65px;
-  padding-bottom: 102px;
+  margin-top: 65px;
+  padding-top: 45px;
+  padding-bottom: 72px;
 }
 
 .services h2 {
@@ -158,14 +161,14 @@ h1 {
 
 .services p {
   width: 400px;
-  margin-bottom: 75px;
+  margin-bottom: 65px;
 }
 
 .services-slider-links {
   width: 240px;
   height: 182px;
   float: left;
-  margin-right: 80px;  
+  margin-right: 80px;
 }
 
 .services-slider-item {
@@ -191,6 +194,7 @@ h1 {
 .right-column {
   float: right;
   width: 300px;
+  padding-bottom: 85px;
 }
 
 .footer-top .logo, .footer-middle p {
@@ -211,14 +215,14 @@ h1 {
 
 .footer-copyright {
   float: left;
-  margin-right: 160px; 
+  margin-right: 160px;
   width: 230px;
 }
 
 .footer-social {
   float: left;
   width: 160px;
-  margin-right: 90px; 
+  margin-right: 90px;
 }
 
 .footer-feedback {
@@ -231,6 +235,50 @@ h1 {
   float: right;
   width: 140px;
 }
+
+.filter {
+  width: 220px;
+}
+
+.catalog-perforators {
+  width: 700px;
+  margin-bottom: 53px;
+}
+
+.filter-product {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.paginator {
+  clear: both;
+  margin-left: 240px;
+  margin-bottom: 60px;
+}
+
+.sort {
+  margin-bottom: 21px;
+}
+
+.catalog-perforators .product-and-makers-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.product-and-makers {
+  font-size: 0;
+}
+
+.about-product {
+  padding-top: 65px;
+  padding-bottom: 74px;
+}
+
+.about-product h2 {
+  margin-bottom: 40px;
+}
+
+
+
 /*Обводки*/
 
 body {
