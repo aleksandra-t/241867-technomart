@@ -28,15 +28,13 @@ h1 {
 }
 
 .main-header {
-  min-height: 320px;
   margin-bottom: 60px;
 }
 
 .container {
   width: 940px;
   padding: 0 10px;
-  margin: 0 auto;
-  min-height: 320px;
+  margin: 0 auto; 
 }
 
 .header-top {
