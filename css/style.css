@@ -34,7 +34,7 @@ h1 {
 .container {
   width: 940px;
   padding: 0 10px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .header-top {
@@ -73,6 +73,11 @@ h1 {
 
 }
 
+
+.catalog {
+  margin-bottom: 53px;
+}
+
 .catalog-item  {
   float: left;
   margin-bottom: 20px;
@@ -99,10 +104,6 @@ h1 {
   float: right;
 }
 
-.catalog {
-  margin-bottom: 53px;
-}
-
 .product-and-makers-title {
   margin-bottom: 20px;
   min-height: 89px;
@@ -110,11 +111,17 @@ h1 {
 
 .product-and-makers-title h2 {
   float: left;
-
+  width: 450px;
+  margin-top: 25px;
+  margin-right: 190px;
+  font-size: 30px;
 }
 
 .product-and-makers-title a {
   float: right;
+  width: 300px;
+  margin-top: 25px;
+  font-size: 14px;
 }
 
 .product-and-makers-catalog {
@@ -273,6 +280,11 @@ h1 {
 
 .about-product h2 {
   margin-bottom: 40px;
+}
+
+.catalog-slider-item:nth-child(2), .popup-write-us, .popup-cart, .product-and-makers-btn,
+.services-slider-item:nth-child(n+3) {
+  display: none;
 }
 
 
