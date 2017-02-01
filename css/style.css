@@ -291,89 +291,25 @@ h1 {
 
 
 /*Обводки*/
-
-body {
-  padding: 3px;
+.main-header, .main-footer, .services-background, .header-background-top, .header-background-bottom, .footer-background-top, .footer-background-bottom  {
+  outline: 1px solid green;
+  background: rgba(0, 255, 0, 0.2)
+}
+.container {
+  outline: 1px solid red;
+  background: rgba(255, 0, 0, 0.2);
 }
 
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  outline: 1px solid yellow;
-  background: rgba(255, 255, 000, 0.2);
-}
-
-body > * > * > * > * {
+ .header-top, .header-middle, .main-navigation, .product-and-makers-item,
+ .catalog-item, .catalog-slider, .product-and-makers-title, .product-and-makers-image,
+ .services h2, .services p, .services-slider, .left-column, .right-column, .footer-top, .footer-middle, .footer-bottom,
+ .breadcrumbs, h1, .paginator, .about-product {
   outline: 1px solid blue;
-  background: rgba(000, 000, 255, 0.2);
+  background: rgba(0, 0, 255, 0.2)
 }
 
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
+.header-top .logo, .header-top form, .promo, .contacts, .user-block, .footer-copyright, .footer-feedback, .footer-social,
+.footer-develop, .footer-top .logo, .footer-top nav, .footer-middle p, .footer-middle nav, .about-product h2, .about-product p{
+  outline: 1px solid yellow;
+  background: rgba(255, 255, 0, 0.2)
 }
