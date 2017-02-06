@@ -50,7 +50,7 @@ h1 {
   float: left;
 }
 
-.logo a{
+.header-top .logo a{
   font-size: 24px;;
   line-height: 24px;
   text-transform: uppercase;
@@ -110,11 +110,11 @@ input[type="submit"] {
 
 .header-top a.cart::before {
   background-position: -5px -5px;
-  left: 15px;
+  left: 17px;
 }
 
 .header-top .bookmarks {
-  margin-right: 20px;
+  margin-right: 27px;
   padding-left: 55px;
 }
 
@@ -135,10 +135,10 @@ input[type="submit"] {
   background-color: #f1f5f7;
 }
 
-.header-middle {
-  min-height: 158px;
+.header-middle { 
   font-size: 0px;
   padding-top: 50px;
+  padding-bottom: 38px;
 }
 
 .header-middle div {
@@ -197,23 +197,28 @@ input[type="submit"] {
   padding-left: 10px;
 }
 
+.user-block {
+  text-align: right;
+  font-size: 0;
+}
+
 .user-btn {
   display: inline-block;
   vertical-align: top;
   background-color: #ffffff;
   color: #000000;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 21px;
   text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 11px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .login {
   position: relative;
-  padding-left: 50px;
-  padding-right: 27px;
+  padding-left: 45px;
+  padding-right: 24px;
   margin-right: 10px;
 
 }
@@ -224,22 +229,22 @@ input[type="submit"] {
   height: 20px;
   background: url("../img/spritesheet.png") no-repeat;
   position: absolute;
-  left: 15px;
+  left: 10px;
   background-position: -5px -308px
 }
 
 .registration {
-  padding-left: 26px;
-  padding-right: 27px;
+  padding-left: 20px;
+  padding-right: 25px;
   margin-right: 0px;
 }
 
 
 
-.main-navigation {
-  min-height: 60px;
+.main-navigation {  
   padding-top: 1px;
   font-size: 0;
+  padding-bottom: 60px;
 }
 
 .main-navigation ul {
@@ -273,6 +278,7 @@ input[type="submit"] {
 }
 
 .catalog-item  {
+  position: relative;
   float: left;
   margin-bottom: 20px;
   width: 300px;
@@ -280,14 +286,45 @@ input[type="submit"] {
   min-height: 123px;
 }
 
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 80px;
+  background: url("../img/spritecatalog.png") no-repeat;
+  top: 20px;
+  left: 192px;  
+}
+
+.materials::before {
+  background-position: 13px -85px;
+}
+
+.tools::before {
+  background-position: -5px -342px;
+
+}
+
+.machine::before {
+  background-position: -10px -262px;
+}
+
+.sales::before {
+  background-position: -5px -175px;
+}
+
+.delivery::before {
+  background-position: -10px -2px;
+}
+
 .catalog-item h2 {
   margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  padding-left: 22px;
-  padding-top: 22px;
-  margin-bottom: 5px;
+  padding-left: 24px;
+  padding-top: 17px;
+  margin-bottom: 10px;
 }
 
 .catalog-btn {
@@ -295,11 +332,12 @@ input[type="submit"] {
   font-size: 14px;
   line-height: 18px;
   padding: 12px 27px;
-  background-color: #e5e5e5;
-  opacity: 0.3;
+  background-color: rgba(229, 229, 229, 0.2);  
   color: #ffffff;
   border-radius: 2px;
   margin-left: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .catalog-item:nth-child(n+3) {
@@ -330,11 +368,76 @@ input[type="submit"] {
   width: 621px;
   height: 267px;
   float: left;
+  position: relative;
+}
 
+.catalog-slider::before, .catalog-slider::after {
+  content: "";
+  width: 22px;
+  height: 42px;
+  background: url(../img/spritesheet.png) no-repeat;
+  position: absolute;
+  z-index: 1;
+  
+}
+
+.catalog-slider::after {
+  right: 27px;
+  top: 112px;
+  background-position: -4px -365px;
+}
+
+.catalog-slider::before {
+  left: 27px;
+  top: 112px;
+  background-position: -4px -365px;
+  transform: rotate(180deg);
 }
 
 .catalog-item:nth-child(n+4) {
   float: right;
+}
+
+.catalog-slider-item {
+  position: relative;
+}
+
+.catalog-slider-item h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 19px;
+  left: 27px;
+  text-transform: uppercase;
+}
+
+.catalog-slider-item p {
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  top: 58px;
+  left: 27px;
+
+}
+
+.catalog-slider .btn {
+  position: absolute;
+  left: 27px;
+  bottom: 23px;
+}
+
+.btn {
+  display: :inline-block;
+  padding: 11px 45px;
+  background: #ee3643;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .product-and-makers-title {
