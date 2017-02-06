@@ -29,6 +29,7 @@ h1 {
 
 .main-header {
   margin-bottom: 60px;
+
 }
 
 .container {
@@ -37,23 +38,107 @@ h1 {
   margin: 0 auto;
 }
 
+.main-header .header-background-top {
+  background-color: #293449;
+}
+
 .header-top {
   min-height: 42px;
 }
 
 .header-top div, .header-top form {
   float: left;
-  margin-right: 20px;
 }
 
-.header-top form {
-  margin-right: 160px;
+.logo a{
+  font-size: 24px;;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  padding: 9px 55px;
+}
+
+.header-top input {
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  width: 260px;
+  position: relative;
+}
+
+.header-top label::before {
+  content:"";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: red;
+
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+.header-top a {
+  float: left;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+  position: relative;
+}
+
+.header-top a:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  background: url("../img/spritesheet.png") no-repeat;
+  top: 12px;
+  left: 27px;
+  opacity: 0.3;
+}
+
+.header-top a.bookmarks::before {
+  background-position: -4px -31px;
+}
+
+.header-top a.cart::before {
+  background-position: -5px -5px;
+  left: 15px;
+}
+
+.header-top .bookmarks {
+  margin-right: 20px;
+  padding-left: 55px;
+}
+
+.header-top .cart {
+  margin-right: 10px;
+  padding-left: 50px;
+}
+
+.header-top .order {
+  float: right;
+  background: #63a63e;
+  padding-left: 20px;
+
+  width: 130px;
+}
+
+.main-header .header-background-bottom {
+  background-color: #f1f5f7;
 }
 
 .header-middle {
   min-height: 158px;
   font-size: 0px;
-  padding-top: 35px;
+  padding-top: 50px;
 }
 
 .header-middle div {
@@ -62,17 +147,125 @@ h1 {
   font-size: 16px;
   width: 300px;
   margin-right: 20px;
+
 }
 
 .header-middle div:last-child {
   margin-right: 0;
 }
 
+.promo p {
+  margin: 0;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #e9292a;
+  width: 200px;
+  margin-left: 53px;
+}
+
+
+
+.contacts .phone {
+  font-size: 21px;
+  line-height: 21px;
+  border: 3px solid #ffffff;
+  width: 265px;
+  padding: 10px 0;
+  padding-left: 70px;
+  box-sizing: border-box;
+  position: relative;
+  color: #e9292a;
+
+}
+
+.contacts .phone::before {
+  content:"";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -4px -335px;
+  top: 10px;
+  left: 12px;
+}
+
+.contacts .adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  padding-left: 10px;
+}
+
+.user-btn {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.login {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 27px;
+  margin-right: 10px;
+
+}
+
+.login::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/spritesheet.png") no-repeat;
+  position: absolute;
+  left: 15px;
+  background-position: -5px -308px
+}
+
+.registration {
+  padding-left: 26px;
+  padding-right: 27px;
+  margin-right: 0px;
+}
+
+
+
 .main-navigation {
   min-height: 60px;
   padding-top: 1px;
+  font-size: 0;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #293449;
 
 }
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.main-navigation a {
+  display: block;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 22px 0px;
+  padding-left: 50px;
+}
+
 
 
 .catalog {
@@ -82,16 +275,55 @@ h1 {
 .catalog-item  {
   float: left;
   margin-bottom: 20px;
-}
-
-.catalog-item {
   width: 300px;
   margin-right: 20px;
   min-height: 123px;
 }
 
+.catalog-item h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-left: 22px;
+  padding-top: 22px;
+  margin-bottom: 5px;
+}
+
+.catalog-btn {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 27px;
+  background-color: #e5e5e5;
+  opacity: 0.3;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-left: 24px;
+}
+
 .catalog-item:nth-child(n+3) {
   margin-right: 0;
+}
+
+.catalog .materials {
+  background-color: #f6b22d;
+}
+
+.catalog .tools {
+  background-color: #4aafde;
+}
+
+.catalog .machine {
+  background-color: #cc79d1;
+}
+
+.catalog .sales {
+  background-color: #85d179;
+}
+
+.catalog .delivery {
+  background-color: #f6b22d;
 }
 
 .catalog-slider {
