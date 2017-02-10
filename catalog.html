@@ -16,9 +16,7 @@
         <div class="container">
           <div class="header-top">
             <div class="logo">
-              <a href="index.html">
-                <img src="img/logo.png" width="220" height="47" alt="Техномарт">
-              </a>
+              <a href="index.html" class="logo-top">Техномарт</a>
             </div>
             <form class="search" action="#" method="get">
               <label>
@@ -87,31 +85,31 @@
         <a href="#" class="breadcrumbs-page">Инструмент</a>
         <a class="breadcrumbs-page">Перфораторы</a>
       </div>
-      <h1> Перфораторы</h1>
+      <h1 class="inner-title"> Перфораторы</h1>
       <div class="left-column filter-product">
         <form action="#" method="get" class="filter">
           <span class="filter-title">Фильтр:</span>
           <div class="filter-price">
-            <label for="price">Цена:</label>
+            <label for="price" class="price">Цена:</label>
             0<input type="range" min="0" max="30000" id="price">30000
           </div>
           <div class="filter-block">
             <h2>Производители:</h2>
-            <label>
-              <input type="checkbox" name="bosch" checked> Bosch
-            </label>
-            <label>
-              <input type="checkbox" name="interskol"> Интерскол
-            </label>
-            <label>
-              <input type="checkbox" name="makita" checked> Makita
-            </label>
-            <label>
-              <input type="checkbox" name="dewalt"> Dewalt
-            </label>
-            <label>
-              <input type="checkbox" name="hitachi"> Hitachi
-            </label>
+
+            <input type="checkbox" name="bosch" id="bosch" checked>
+            <label for="bosch">Bosch</label>
+
+            <input type="checkbox" name="interskol" id="interskol">
+            <label for="interskol">Интерскол</label>
+
+            <input type="checkbox" name="makita" id="makita" checked>
+            <label for="makita">Makita</label>
+
+            <input type="checkbox" name="dewalt" id="dewalt">
+            <label for="dewalt"> Dewalt</label>
+
+            <input type="checkbox" name="hitachi" id="hitachi">
+            <label for="hitachi">Hitachi</label>
           </div>
           <div class="filter-block">
             <h2>Питание:</h2>
@@ -245,9 +243,7 @@
         <div class="container">
          <div class="footer-top clearfix">
            <div class="logo">
-             <a href="index.html">
-               <img src="img/logo.png" width="220" height="68" alt="Техномарт">
-             </a>
+             <a class="logo-bottom">Техномарт</a>
            </div>
            <nav>
              <ul class="footer-top-menu">

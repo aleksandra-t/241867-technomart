@@ -28,8 +28,8 @@ h1 {
   clear: both;
 }
 
-.main-header {
-  margin-bottom: 57px;
+.content {
+  margin-top: 57px;
 
 }
 
@@ -99,6 +99,7 @@ h1 {
 
 .header-top input::-webkit-input-placeholder {
   font-size: 17px;
+  line-height: 17px;
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
@@ -1165,8 +1166,125 @@ input[type="submit"] {
   color: #ee3643
 }
 
+.breadcrumbs {
+
+}
+
+.breadcrumbs a {
+  display: inline-block;
+  padding: 20px 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs a:first-child {
+  padding-right: 54px;
+}
+
+.breadcrumbs a:not(:first-child)::before {
+  content:"";
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  background: url("../img/.icon-right.png") no-repeat;
+  top: 26px;
+  left: -25px;
+}
+
+.breadcrumbs .index {
+  font-size: 0;
+  position: relative;
+}
+
+.breadcrumbs .index::before {
+  content:"";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -16px -470px;
+}
+
+.inner-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  padding: 25px 0;
+  padding-left: 29px;
+  background: #f2f6f8;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .filter {
   width: 220px;
+}
+
+.filter-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  background: #f7f3ec;
+  text-transform: uppercase;
+  padding: 12px 0;
+  padding-left: 18px;
+  display: block;
+  border-radius: 5px;
+}
+
+.filter-price .price {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px 0;
+}
+
+.filter-block h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.filter-block label {
+  display: block;
+  color: #000000;
+  margin-bottom: 18px;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+  margin-left: 35px;
+}
+
+.filter-block label::before {
+  content:"";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: red;
+  left: -35px;
+  border: 2px solid 
+}
+
+
+
+input[type="checkbox"], input[type="radio"] {
+ display: none;
 }
 
 .catalog-perforators {
@@ -1214,7 +1332,7 @@ input[type="submit"] {
 
 
 /*Обводки*/
-/*.main-header, .main-footer, .services-background, .header-background-top, .header-background-bottom, .footer-background-top, .footer-background-bottom  {
+.main-header, .main-footer, .services-background, .header-background-top, .header-background-bottom, .footer-background-top, .footer-background-bottom  {
   outline: 1px solid green;
   background: rgba(0, 255, 0, 0.2)
 }
