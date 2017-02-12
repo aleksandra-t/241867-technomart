@@ -73,8 +73,7 @@ h1 {
 }
 
 .header-top input {
-  background: #293449 url("../img/.icon-search.png") no-repeat 15px 12px;
-  opacity: 0.3;
+  background: #293449;
   font-size: 17px;
   line-height: 18px;
   padding-top: 12px;
@@ -83,7 +82,14 @@ h1 {
   width: 270px;
   position: relative;
   border: none;
+}
 
+.header-top .search-label {
+  /*background: url("../img/.icon-search.png") no-repeat 15px 12px;*/
+  background: red;
+  position: absolute;
+  width: 20px;
+  height: 20px;
 }
 
 .header-top input:hover {
