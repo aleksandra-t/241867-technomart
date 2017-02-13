@@ -1135,7 +1135,7 @@ input:focus+.search-label {
 }
 .footer-top .logo, .footer-middle p {
   float: left;
-  width: 380px;
+  width: 370px;
   margin-right: 10px;
 }
 
@@ -1145,7 +1145,7 @@ input:focus+.search-label {
   line-height: 30px;
   text-transform: uppercase;
   background-color: #ee3643;
-  padding: 15px 41px;
+  padding: 15px 36px;
   border-bottom: 5px solid #b52933;
   margin-bottom: 29px;
   text-decoration: none;
@@ -1155,7 +1155,7 @@ input:focus+.search-label {
 
 .footer-top nav, .footer-middle nav {
   float: right;
-  width: 550px;
+  width: 560px;
 
 }
 
@@ -1345,7 +1345,7 @@ input:focus+.search-label {
   height: 12px;
   position: absolute;
   background: url("../img/icon-right-small.png") no-repeat;
-  top: 26px;
+  top: 22px;
   left: -25px;
 }
 
