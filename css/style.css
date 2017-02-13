@@ -55,11 +55,14 @@ h1 {
   display: block;
   font-size: 24px;;
   line-height: 24px;
+  width: 220px;
   text-transform: uppercase;
   background-color: #ee3643;
   border-bottom: 5px solid  #b52933;
-  padding: 10px 50px 8px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   cursor: pointer;
+  text-align: center;
 }
 
 .header-top .logo-top:hover {
@@ -79,7 +82,7 @@ h1 {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 45px;
-  width: 280px;
+  width: 270px;
   position: relative;
   border: none;
 }
@@ -211,7 +214,7 @@ input:focus+.search-label {
 .header-top .cart {
   width: 150px;
   box-sizing: border-box;
-  padding-left: 44px;
+  padding-left: 40px;
 }
 
 .header-top .order {
@@ -235,21 +238,25 @@ input:focus+.search-label {
 }
 
 .header-middle {
-  font-size: 0px;
+  font-size: 16px;
   padding-top: 50px;
   padding-bottom: 38px;
 }
 
-.header-middle div {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
+.header-middle .promo {
+  float: left;
   width: 300px;
   margin-right: 20px;
 }
 
-.header-middle div:last-child {
-  margin-right: 0;
+.header-middle .contacts {
+  float: left;
+  width: 300px;
+}
+
+.header-middle .user-block {
+  float: right;
+  width: 274px;
 }
 
 .promo p {
@@ -297,13 +304,12 @@ input:focus+.search-label {
 
 .header-middle .user-block {
   font-size: 0;
-  width: 274px;
-  margin-left: 25px;
+  margin-left: 45px;
   margin-right: 0;
 }
 
 .header-middle .user-block-personal {
-  margin-left: 0px;
+  margin-left: 45px;
 }
 
 .user-btn {
@@ -391,39 +397,39 @@ input:focus+.search-label {
   font-size: 0;
 }
 
-.user-field::before, .user-field::after {
+.user-icon::before, .user-log-out::after {
   content:"";
   position: absolute;
   width: 20px;
   height: 20px;
   background: url("../img/spritesheet.png") no-repeat;
   top: 12px;
-  left: 14px;
+  left: 12px;
   cursor: pointer;
 }
 
-.user-field::before, .user-field:active::before {
+.user-icon::before, .user-icon:active::before {
   background-position: -15px -764px;
 }
 
-.user-field:hover::before {
+.user-icon:hover::before {
   background-position: -15px -333px;
 }
 
-.user-field:active::before {
+.user-icon:active::before {
   background-position: -15px -764px;
 }
 
-.user-field::after {
-  left: 270px;
+.user-log-out::after {
+  left: 240px;
   background-position: -15px -557px;
 }
 
-.user-field:hover::after {
+.user-log-out:hover::after {
   background-position: -15px -198px;
 }
 
-.user-field:active::after {
+.user-log-out:active::after {
   background-position: -15px -557px;
 }
 
@@ -456,6 +462,7 @@ input:focus+.search-label {
 }
 
 .main-navigation {
+  clear: both;
   padding-top: 1px;
   font-size: 0;
   padding-bottom: 62px;
