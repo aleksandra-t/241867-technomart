@@ -127,7 +127,7 @@ h1 {
   background: #ffffff;
 }
 
-.header-top .search-label:focus {
+.search-label+input:focus {
   background: #ffffff url("../img/.icon-search-red.png") no-repeat;
   position: absolute;
   width: 20px;
