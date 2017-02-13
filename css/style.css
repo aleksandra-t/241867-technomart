@@ -58,7 +58,7 @@ h1 {
   text-transform: uppercase;
   background-color: #ee3643;
   border-bottom: 5px solid  #b52933;
-  padding: 10px 55px 8px;
+  padding: 10px 50px 8px;
   cursor: pointer;
 }
 
@@ -1128,7 +1128,7 @@ input:focus+.search-label {
 
 .right-column .btn {
   padding-right: 60px;
-  padding-left: 63px;
+  padding-left: 60px;
 }
 .main-footer .footer-background-top {
   background: #32425c;
@@ -1522,11 +1522,11 @@ input:focus+.search-label {
 }
 
 .checkbox label:active::before {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .checkbox label:active {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -1541,7 +1541,7 @@ input[type="checkbox"]:checked + label:hover::before {
 }
 
 input[type="checkbox"]:checked + label:active::before {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .radio label::before {
