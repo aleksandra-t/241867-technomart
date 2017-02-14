@@ -251,7 +251,7 @@ input:focus+.search-label {
 
 .header-middle .contacts {
   float: left;
-  width: 300px;
+  width: 270px;
 }
 
 .header-middle .user-block {
@@ -304,12 +304,14 @@ input:focus+.search-label {
 
 .header-middle .user-block {
   font-size: 0;
-  margin-left: 45px;
+  margin-left: 76px;
   margin-right: 0;
+  vertical-align: top;
 }
 
 .header-middle .user-block-personal {
-  margin-left: 45px;
+  width: 300px;
+  margin-left: 50px;
 }
 
 .user-btn {
@@ -1061,6 +1063,10 @@ input:focus+.search-label {
   margin-bottom: 15px;
 }
 
+.catalog-content .right-column {
+  margin-bottom: 0;
+}
+
 .left-column h2 {
   margin: 0;
   text-transform: uppercase;
@@ -1174,6 +1180,7 @@ input:focus+.search-label {
   padding: 0;
   list-style: none;
   font-size: 0;
+  text-align: right;
 }
 
 .footer-top-menu li {
@@ -1210,13 +1217,13 @@ input:focus+.search-label {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 50px;
+  width: 380px;
 }
 
 .footer-middle-menu {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 23px;
   text-align: right;
   font-size: 0;
 }
@@ -1710,9 +1717,9 @@ input[type="submit"] {
 
 .paginator {
   clear: both;
-  margin-left: 240px;
   margin-bottom: 60px;
   font-size: 0;
+  margin-top: 24px;
 }
 
 .paginator-page, .paginator-page-active  {
