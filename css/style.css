@@ -753,6 +753,7 @@ input:focus+.search-label {
 .product-and-makers-catalog {
   min-height: 318px;
   font-size: 0;
+
 }
 
 .product-and-makers-item, .product-and-makers-catalog>a {
@@ -939,7 +940,7 @@ input:focus+.search-label {
 }
 
  .services {
-  margin-top: 60px;
+  margin-top: 65px;
   padding-top: 37px;
   padding-bottom: 63px;
 }
