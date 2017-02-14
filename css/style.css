@@ -1952,6 +1952,13 @@ margin-right: 68px;
   display: none;
 }
 
+.popup-write-us-show {
+  display: block;
+}
+
+.popup-cart-show {
+  display: block;
+}
 
 
 
