@@ -1,12 +1,16 @@
 
 var feedback = document.querySelector(".right-column .btn");
 var popup = document.querySelector(".popup-write-us");
-var close = document.querySelector(".popup-close");
+var close = popup.querySelector(".popup-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var cart = document.querySelector(".product-and-makers-btn .buy");
-var CartPopup = document.querySelector(".popup-cart");
+var cartPopup = document.querySelector(".popup-cart");
+var cartClose = cartPopup.querySelector(".popup-close");
+var map = document.querySelector(".map");
+var mapPopup = document.querySelector(".popup-map");
+var mapClose = mapPopup.querySelector(".popup-close");
 
 
 feedback.addEventListener("click", function(event) {
@@ -37,10 +41,36 @@ window.addEventListener("keydown", function(event) {
 
 cart.addEventListener("click", function(event) {
 	event.preventDefault();
-	CartPopup.classList.add("popup-cart-show");
+	cartPopup.classList.add("popup-cart-show");
 });
 
-close.addEventListener("click", function(event) {
+cartClose.addEventListener("click", function(event) {
 	event.preventDefault();
-	CartPopup.classList.remove("cart-show");
+	cartPopup.classList.remove("popup-cart-show");
+});
+
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+		if (cartPopup.classList.contains("popup-cart-show")) {
+		cartPopup.classList.remove("popup-cart-show");
+	}
+	}
+});
+
+map.addEventListener("click", function(event) {
+	event.preventDefault();
+	mapPopup.classList.add("popup-map-show");
+});
+
+mapClose.addEventListener("click", function(event) {
+	event.preventDefault();
+	mapPopup.classList.remove("popup-map-show");
+});
+
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+		if (mapPopup.classList.contains("popup-map-show")) {
+		mapPopup.classList.remove("popup-map-show");
+	}
+	}
 });
