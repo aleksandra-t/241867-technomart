@@ -1975,6 +1975,8 @@ margin-right: 68px;
 
 .popup-cart-show {
   display: block;
+  animation-name: stretching;
+  animation-duration: 0.6s;
 }
 
 .popup-map-show {
