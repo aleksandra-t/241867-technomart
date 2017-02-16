@@ -1567,11 +1567,11 @@ input:focus+.search-label {
   background: url("../img/checkbox-hover.png") no-repeat;
 }
 
-.checkbox label:active::before {
+.checkbox label:disabled::before {
   opacity: 0.4;
 }
 
-.checkbox label:active {
+.checkbox label:disabled {
   opacity: 0.4;
 }
 
@@ -1586,7 +1586,7 @@ input[type="checkbox"]:checked + label:hover::before {
   background: url("../img/checkbox-checked-hover.png") no-repeat;
 }
 
-input[type="checkbox"]:checked + label:active::before {
+input[type="checkbox"]:checked + label:disabled::before {
   opacity: 0.4;
 }
 
@@ -1610,7 +1610,7 @@ input[type="radio"]:checked + label:hover::before {
     background: #b5b5b5;
 }
 
-input[type="radio"]:checked + label:active::before {
+input[type="radio"]:checked + label:disabled::before {
     opacity: 0.3;
 }
 
@@ -1618,7 +1618,7 @@ input[type="radio"]:checked + label:active::before {
   box-shadow: 0 0 0 3px #b5b5b5;
 }
 
-.radio label:active {
+.radio label:disabled {
   opacity: 0.3;
 }
 
@@ -1820,8 +1820,8 @@ margin-right: 68px;
   padding-top: 55px;
   color: #000000;
   background-color: #ffffff;
-  position: absolute;
-  top: 2520px;
+  position: fixed;
+  top: 20%;
   left: 50%;
   margin-left: -310px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
