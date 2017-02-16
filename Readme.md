@@ -2,6 +2,7 @@
 
 * Студент: [Александра Трухачева](https://up.htmlacademy.ru/htmlcss/16/user/241867).
 * Наставник: [Денис Байдаров](https://up.htmlacademy.ru/htmlcss/16/user/7956)
+"Готово к финальной проверке"
 
 ---
 
