@@ -1,17 +1,10 @@
-
-var feedback = document.querySelector(".right-column .btn");
 var popup = document.querySelector(".popup-write-us");
+if(popup) {
+var feedback = document.querySelector(".right-column .btn");
 var close = popup.querySelector(".popup-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
-var cart = document.querySelector(".product-and-makers-btn .buy");
-var cartPopup = document.querySelector(".popup-cart");
-var cartClose = cartPopup.querySelector(".popup-close");
-var map = document.querySelector(".map");
-var mapPopup = document.querySelector(".popup-map");
-var mapClose = mapPopup.querySelector(".popup-close");
-
 
 feedback.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -38,24 +31,45 @@ window.addEventListener("keydown", function(event) {
 	}
 	}
 });
+};
 
-cart.addEventListener("click", function(event) {
-	event.preventDefault();
-	cartPopup.classList.add("popup-cart-show");
-});
 
-cartClose.addEventListener("click", function(event) {
-	event.preventDefault();
-	cartPopup.classList.remove("popup-cart-show");
-});
+var cart = document.querySelectorAll(".buy");
+var cartPopup = document.querySelector(".popup-cart");
+var cartClose = cartPopup.querySelector(".popup-close");
+var cartContinue = cartPopup.querySelector(".continue");
 
-window.addEventListener("keydown", function(event) {
-	if (event.keyCode === 27) {
-		if (cartPopup.classList.contains("popup-cart-show")) {
-		cartPopup.classList.remove("popup-cart-show");
-	}
-	}
-});
+ for(var i=0;i<cart.length;i++) {
+ cart[i].addEventListener("click", function(event) {
+ 	  event.preventDefault();
+     cartPopup.classList.add("popup-cart-show");
+   });
+ }
+
+ cartClose.addEventListener("click", function(event) {
+ 	event.preventDefault();
+ 	cartPopup.classList.remove("popup-cart-show");
+ });
+
+ window.addEventListener("keydown", function(event) {
+ 	if (event.keyCode === 27) {
+ 		if (cartPopup.classList.contains("popup-cart-show")) {
+ 		cartPopup.classList.remove("popup-cart-show");
+ 	}
+ 	}
+ });
+
+ cartContinue.addEventListener("click", function(event) {
+ 	event.preventDefault();
+ 	cartPopup.classList.remove("popup-cart-show");
+ });
+
+
+
+var map = document.querySelector(".map");
+if(map) {
+var mapPopup = document.querySelector(".popup-map");
+var mapClose = mapPopup.querySelector(".popup-close");
 
 map.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -74,3 +88,4 @@ window.addEventListener("keydown", function(event) {
 	}
 	}
 });
+};

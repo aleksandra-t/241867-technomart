@@ -9,12 +9,6 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-}
-
 .filter-block h2 {
   font-size: 17px;
   line-height: 30px;
@@ -92,11 +86,11 @@ h1 {
 }
 
 .header-top .search-label {
-  background: url("../img/icon-search.png") no-repeat;
+  background: url("../img/sprite.png") -15px -1169px no-repeat;
   opacity: 0.3;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   z-index: 1;
   left: 17px;
   top: 12px;
@@ -108,13 +102,13 @@ h1 {
 }
 
 .header-top .search-label:hover {
-  background: #212a3a url("../img/icon-search.png") no-repeat;
+  background: #212a3a url("../img/sprite.png") -15px -1169px no-repeat;
   opacity: 1;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   z-index: 1;
-  left: 15px;
+  left: 17px;
   top: 12px;
 }
 
@@ -131,12 +125,12 @@ h1 {
 }
 
 input:focus+.search-label {
-  background: url("../img/icon-search-red.png") no-repeat;
+  background: url("../img/sprite.png") -15px -1216px no-repeat;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   z-index: 1;
-  left: 15px;
+  left: 17px;
   top: 12px;
   opacity: 1;
 }
@@ -168,7 +162,7 @@ input:focus+.search-label {
   content: "";
   width: 17px;
   height: 16px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   top: 12px;
   left: 18px;
   opacity: 0.3;
@@ -285,11 +279,11 @@ input:focus+.search-label {
 
 .contacts .phone::before {
   content:"";
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   position: absolute;
-  background: url("../img/spritesheet.png") no-repeat;
-  background-position: -15px -606px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -906px;
   top: 10px;
   left: 16px;
 }
@@ -327,7 +321,6 @@ input:focus+.search-label {
   padding-top: 9px;
   padding-bottom: 11px;
   font-family: "Cuprum", "Arial", sans-serif;
-
 }
 
 .login {
@@ -335,21 +328,20 @@ input:focus+.search-label {
   padding-left: 41px;
   padding-right: 24px;
   margin-right: 10px;
-
 }
 
 .login::before {
   content: "";
   width: 20px;
   height: 20px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   position: absolute;
   left: 8px;
-  background-position: -15px -557px
+  background-position: -15px -764px
 }
 
 .login:hover::before {
-  background: url("../img/spritesheet.png") no-repeat -15px -198px;
+  background: url("../img/sprite.png") no-repeat -15px -200px;
 }
 
 .login:hover {
@@ -361,8 +353,8 @@ input:focus+.search-label {
 }
 
 .login:active::before {
-  background: url("../img/spritesheet.png") no-repeat;
-  background-position: -15px -557px
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -764px;
 }
 
 .registration {
@@ -406,35 +398,35 @@ input:focus+.search-label {
   position: absolute;
   width: 21px;
   height: 20px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   top: 12px;
   left: 12px;
   cursor: pointer;
 }
 
 .user-icon::before, .user-icon:active::before {
-  background-position: -15px -764px;
+  background-position: -15px -1486px;
 }
 
 .user-icon:hover::before {
-  background-position: -15px -333px;
+  background-position: -15px -287px;
 }
 
 .user-icon:active::before {
-  background-position: -15px -764px;
+  background-position: -15px -1486px;
 }
 
 .user-log-out::after {
-  background: url("../img/log-out.png") no-repeat;
+  background: url("../img/sprite.png") -15px -1576px no-repeat;
   left: 268px;
 }
 
 .user-log-out:hover::after {
-  background: url("../img/log-out-hover.png") no-repeat;
+  background: url("../img/sprite.png") -15px -1670px no-repeat;
 }
 
 .user-log-out:active::after {
-  background: url("../img/log-out-active.png") no-repeat;
+  background: url("../img/sprite.png") -15px -1623px no-repeat;
 }
 
 
@@ -472,7 +464,6 @@ input:focus+.search-label {
   padding-top: 1px;
   font-size: 0;
   padding-bottom: 62px;
-
 }
 
 .main-navigation ul {
@@ -487,7 +478,6 @@ input:focus+.search-label {
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-
 }
 
 .main-navigation a {
@@ -507,7 +497,7 @@ input:focus+.search-label {
 }
 
 .main-navigation li:last-child a {
-  padding-right: 49px;
+  padding-right: 52px;
 }
 
 .main-navigation a:hover {
@@ -536,30 +526,37 @@ input:focus+.search-label {
   position: absolute;
   width: 85px;
   height: 80px;
-  background: url("../img/spritecatalog.png") no-repeat;
-  top: 23px;
-  left: 190px;
+  background: url("../img/sprite.png") no-repeat;
 }
 
 .materials::before {
-  background-position: 13px -85px;
+  background-position: -15px -811px;
+  top: 30px;
+  left: 212px;
 }
 
 .tools::before {
-  background-position: -5px -342px;
-
+  background-position: -15px -1355px;
+  top: 32px;
+  left: 197px;
 }
 
 .machine::before {
-  background-position: -10px -262px;
+  background-position: -15px -1263px;
+  top: 32px;
+  left: 192px;
 }
 
 .sales::before {
-  background-position: -5px -175px;
+  background-position: -15px -1067px;
+  top: 27px;
+  left: 197px;
 }
 
 .delivery::before {
-  background-position: -10px -2px;
+  background-position: -15px -494px;
+  top: 32px;
+  left: 192px;
 }
 
 .materials::after {
@@ -663,28 +660,27 @@ input:focus+.search-label {
   position: absolute;
   top: 59px;
   left: 25px;
-
 }
 
 .slider-btn {
   position: absolute;
   width: 22px;
   height: 42px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   border: none;
 }
 
 .slider-btn-left {
   left: 27px;
   top: 112px;
-  background-position: -15px -655px;
+  background-position: -15px -955px;
   transform: rotate(180deg);
 }
 
 .slider-btn-right {
   right: 21px;
   top: 112px;
-  background-position: -15px -655px;
+  background-position: -15px -955px;
 }
 
 .catalog-slider .btn {
@@ -692,11 +688,10 @@ input:focus+.search-label {
   left: 27px;
   bottom: 25px;
   padding: 11px 47px;
-
 }
 
 .btn {
-  display: :inline-block;
+  display: inline-block;
   padding: 11px 45px;
   background: #ee3643;
   border-radius: 3px;
@@ -838,7 +833,7 @@ input:focus+.search-label {
   position:absolute;
   width: 17px;
   height: 17px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   top: 12px;
   left: 13px;
   background-position: -15px -15px;
@@ -921,6 +916,7 @@ input:focus+.search-label {
   border-radius: 3px;
   position: relative;
 }
+
 .new-price::after{
     content:"";
     position:absolute;
@@ -939,6 +935,7 @@ input:focus+.search-label {
 .product-and-makers-image:active {
   opacity: 0.3;
 }
+
 .product-and-makers-catalog>a {
   height: 145px;
   border: 1px solid #e7e7e7;
@@ -1019,7 +1016,6 @@ input:focus+.search-label {
 .services-slider div::before {
   position: absolute;
   content:"";
-
 }
 
 .services-slider div:nth-child(2)::before {
@@ -1096,6 +1092,7 @@ input:focus+.search-label {
   font-weight: normal;
   margin-bottom: 25px;
 }
+
 .left-column p{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1103,6 +1100,7 @@ input:focus+.search-label {
   color: #000000;
   margin-bottom: 23px;
 }
+
 .dashed-list {
   list-style: none;
   margin: 0;
@@ -1188,11 +1186,9 @@ input:focus+.search-label {
   color: #ffffff;
 }
 
-
 .footer-top nav, .footer-middle nav {
   float: right;
   width: 560px;
-
 }
 
 .footer-top-menu {
@@ -1259,7 +1255,6 @@ input:focus+.search-label {
   font-size: 18px;
   line-height: 24px;
   margin-right: 56px;
-
 }
 
 .footer-middle-menu a:hover {
@@ -1302,7 +1297,7 @@ input:focus+.search-label {
   display: inline-block;
   width: 41px;
   height: 41px;
-  background: #212a3a url("../img/spritesheet.png") no-repeat;
+  background: #212a3a url("../img/sprite.png") no-repeat;
   margin-right: 2px;
   font-size: 0;
   vertical-align: top;
@@ -1318,15 +1313,15 @@ input:focus+.search-label {
 }
 
 .social-vk {
-  background-position: -5px -798px;
+  background-position: -5px -1518px;
 }
 
 .social-fb {
-  background-position: 0px -412px;
+  background-position: 0px -615px;
 }
 
 .social-inst {
-  background-position: -3px -502px;
+  background-position: -3px -705px;
 }
 
 .footer-feedback {
@@ -1390,8 +1385,8 @@ input:focus+.search-label {
   width: 8px;
   height: 12px;
   position: absolute;
-  background: url("../img/icon-right-small.png") no-repeat;
-  top: 22px;
+  background: url("../img/sprite.png") -15px -1025px no-repeat;
+  top: 20px;
   left: -25px;
 }
 
@@ -1402,13 +1397,13 @@ input:focus+.search-label {
 
 .breadcrumbs .index::before {
   content:"";
-  width: 14px;
+  width: 16px;
   height: 14px;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 0;
-  background: url("../img/spritesheet.png") no-repeat;
-  background-position: -16px -470px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -675px;
 }
 
 .inner-title {
@@ -1421,6 +1416,7 @@ input:focus+.search-label {
   background: #f2f6f8;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #32425c;
 }
 
 .filter {
@@ -1558,13 +1554,13 @@ input:focus+.search-label {
   position: absolute;
   width: 27px;
   height: 23px;
-  top: -5px;
+  top: 0px;
   left: -35px;
-  background: url("../img/checkbox-empty.png") no-repeat;
+  background: url("../img/sprite.png") -15px -388px no-repeat;
 }
 
 .checkbox label:hover::before {
-  background: url("../img/checkbox-hover.png") no-repeat;
+  background: url("../img/sprite.png") -15px -441px no-repeat;
 }
 
 .checkbox label:disabled::before {
@@ -1578,12 +1574,12 @@ input:focus+.search-label {
 input[type="checkbox"]:checked + label::before {
 	width: 27px;
 	height: 23px;
-	background: url(../img/spritesheet.png) no-repeat;
+	background: url("../img/sprite.png") no-repeat;
 	background-position: -15px -107px;
 }
 
 input[type="checkbox"]:checked + label:hover::before {
-  background: url("../img/checkbox-checked-hover.png") no-repeat;
+  background: url("../img/sprite.png") -15px -335px no-repeat;
 }
 
 input[type="checkbox"]:checked + label:disabled::before {
@@ -1707,32 +1703,32 @@ margin-right: 68px;
   top: -10px;
   width: 12px;
   height: 11px;
-  background: url("../img/spritesheet.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
 }
 
 .sort .min::before {
-  background-position: -15px -724px;
-}
-
-.sort .min:hover::before {
-  background-position: -15px -294px;
-}
-
-.sort .min:active::before {
-    background-position: -15px -724px;
-}
-
-.sort .max::before {
-  background-position: -15px -381px;
-}
-
-.sort .max:hover::before {
-  background-position: -15px -294px;
+  background-position: -15px -587px;
   transform:rotate(180deg);
 }
 
+.sort .min:hover::before {
+  background-position: -15px -247px;
+}
+
+.sort .min:active::before {
+    background-position: -15px -1446px;
+}
+
+.sort .max::before {
+  background-position: -15px -587px;
+}
+
+.sort .max:hover::before {
+  background-position: -15px -247px;
+}
+
 .sort .max:active::before {
-  background-position: -15px -725px;
+  background-position: -15px -1446px;
 }
 
 .catalog-perforators {
@@ -1821,7 +1817,7 @@ margin-right: 68px;
   color: #000000;
   background-color: #ffffff;
   position: fixed;
-  top: 20%;
+  top: 25%;
   left: 50%;
   margin-left: -310px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
@@ -1892,7 +1888,6 @@ margin-right: 68px;
   border: 2px solid #d7dcde;
   border-radius: 5px;
   margin-top: 10px;
-
 }
 
 .write-us textarea {
@@ -1917,10 +1912,6 @@ margin-right: 68px;
   padding: 37px 0;
   padding-left: 80px;
   padding-right: 80px;
-}
-
-.popup-cart {
-  top: 410px;
 }
 
 .popup-cart h2 {
@@ -1996,32 +1987,4 @@ margin-right: 68px;
   100% {
     transform: translateX(0);
   }
-}
-
-
-
-
-/*Обводки*/
-/*.main-header, .main-footer, .services-background, .header-background-top, .header-background-bottom,
-.footer-background-top, .footer-background-bottom  {
-  outline: 1px solid green;
-  background: rgba(0, 255, 0, 0.2)
-}
-.container {
-  outline: 1px solid red;
-  background: rgba(255, 0, 0, 0.2);
-}
-
- .header-top, .header-middle, .main-navigation, .product-and-makers-item,
- .catalog-item, .catalog-slider, .product-and-makers-title, .product-and-makers-image,
- .services h2, .services p, .services-slider, .left-column, .right-column, .footer-top, .footer-middle, .footer-bottom,
- .breadcrumbs, h1, .paginator, .about-product {
-  outline: 1px solid blue;
-  background: rgba(0, 0, 255, 0.2)
-}
-
-.header-top .logo, .header-top form, .promo, .contacts, .user-block, .footer-copyright, .footer-feedback, .footer-social,
-.footer-develop, .footer-top .logo, .footer-top nav, .footer-middle p, .footer-middle nav, .about-product h2, .about-product p{
-  outline: 1px solid yellow;
-  background: rgba(255, 255, 0, 0.2)
 }
