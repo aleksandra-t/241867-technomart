@@ -51,7 +51,7 @@ body {
   width: 220px;
   text-transform: uppercase;
   background-color: #ee3643;
-  border-bottom: 5px solid  #b52933;
+  border-bottom: 5px solid #b52933;
   padding-top: 10px;
   padding-bottom: 8px;
   cursor: pointer;
@@ -1723,7 +1723,7 @@ input[type="submit"] {
   margin-left: 10px;
 }
 
-.sort .min::before,  .sort .max::before {
+.sort .min::before, .sort .max::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -1978,7 +1978,7 @@ input[type="submit"] {
   margin-left: -470px;
 }
 
-.catalog-slider-item:nth-child(2),  .product-and-makers-btn,
+.catalog-slider-item:nth-child(2), .product-and-makers-btn,
 .services-slider-item:nth-child(n+3), .popup-cart, .popup-write-us, .popup-map, .slider-credit {
   display: none;
 }
