@@ -27,7 +27,7 @@ if(popup) {
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
       if (popup.classList.contains("popup-write-us-show")) {
-          popup.classList.remove("popup-write-us-show");
+        popup.classList.remove("popup-write-us-show");
       }
     }
   });
@@ -53,7 +53,7 @@ cartClose.addEventListener("click", function(event) {
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (cartPopup.classList.contains("popup-cart-show")) {
-        cartPopup.classList.remove("popup-cart-show");
+      cartPopup.classList.remove("popup-cart-show");
     }
   }
 });
@@ -81,7 +81,7 @@ if(map) {
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
       if (mapPopup.classList.contains("popup-map-show")) {
-          mapPopup.classList.remove("popup-map-show");
+        mapPopup.classList.remove("popup-map-show");
       }
     }
   });
