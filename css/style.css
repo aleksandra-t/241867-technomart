@@ -416,7 +416,7 @@ input:focus+.search-label {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-icon, .user-log-out {
+.user-log-out {
   font-size: 0;
 }
 
