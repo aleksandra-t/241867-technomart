@@ -143,6 +143,13 @@ input:focus+.search-label {
   color: rgba(255, 255, 255, 1);
 }
 
+.header-top input::-moz-placeholder {
+  font-size: 17px;
+  line-height: 17px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
 .search input[type="submit"] {
   display: none;
 }
