@@ -383,8 +383,28 @@ input:focus+.search-label {
   line-height: 21px;
   color: #000000;
   text-decoration: none;
-  padding-left: 45px;
+  padding-left: 47px;
 }
+
+.user-name::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  background: url("../img/sprite.png") -15px -1486px no-repeat;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.user-name:hover::before {
+  background-position: -15px -287px;
+}
+
+.user-name:active::before {
+  background-position: -15px -1486px;
+}
+
 .user-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -393,8 +413,8 @@ input:focus+.search-label {
   font-size: 0;
 }
 
-.user-icon::before, .user-log-out::after {
-  content:"";
+.user-log-out::after {
+  content: "";
   position: absolute;
   width: 21px;
   height: 20px;
@@ -404,17 +424,6 @@ input:focus+.search-label {
   cursor: pointer;
 }
 
-.user-icon::before, .user-icon:active::before {
-  background-position: -15px -1486px;
-}
-
-.user-icon:hover::before {
-  background-position: -15px -287px;
-}
-
-.user-icon:active::before {
-  background-position: -15px -1486px;
-}
 
 .user-log-out::after {
   background: url("../img/sprite.png") -15px -1576px no-repeat;
@@ -473,6 +482,7 @@ input:focus+.search-label {
   list-style: none;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+  text-align: center;
 }
 
 .main-navigation li {
@@ -490,14 +500,6 @@ input:focus+.search-label {
   padding-bottom: 18px;
   padding-right: 31px;
   padding-left: 30px;
-}
-
-.main-navigation li:first-child a {
-  padding-left: 52px;
-}
-
-.main-navigation li:last-child a {
-  padding-right: 52px;
 }
 
 .main-navigation a:hover {
@@ -1227,7 +1229,7 @@ input:focus+.search-label {
 .footer-top-menu li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 56px;
+  margin-right: 60px;
 }
 
 .footer-top-menu a {
@@ -1246,6 +1248,7 @@ input:focus+.search-label {
 
 .footer-top-menu a:active {
   opacity: 0.3;
+  text-decoration: none;
 }
 
 .footer-top-menu li:last-child {
@@ -1273,7 +1276,7 @@ input:focus+.search-label {
 .footer-middle-menu li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 56px;
+  margin-right: 60px;
 }
 
 .footer-middle-menu a {
@@ -1291,6 +1294,7 @@ input:focus+.search-label {
 
 .footer-middle-menu a:active {
    opacity: 0.3;
+   text-decoration: none;
 }
 
 .footer-middle-menu li:last-child {
@@ -1516,6 +1520,7 @@ input:focus+.search-label {
   background: #ababab;
   border-radius: 50%;
   box-shadow: 0 1px 2px #d7d4ce;
+  cursor: pointer;
 }
 
 .max-toggle {
@@ -1735,9 +1740,26 @@ input[type="submit"] {
   background: url("../img/sprite.png") no-repeat;
 }
 
-.sort .min::before {
+.sort .active-sort {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -1446px;
+}
+
+.sort .max::before {
   background-position: -15px -587px;
   transform: rotate(180deg);
+}
+
+.sort .max:hover::before {
+  background-position: -15px -247px;
+}
+
+.sort .max:active::before {
+  background-position: -15px -1446px;
+}
+
+.sort .min::before {
+  background-position: -15px -587px;
 }
 
 .sort .min:hover::before {
@@ -1748,15 +1770,8 @@ input[type="submit"] {
   background-position: -15px -1446px;
 }
 
-.sort .max::before {
-  background-position: -15px -587px;
-}
-
-.sort .max:hover::before {
-  background-position: -15px -247px;
-}
-
-.sort .max:active::before {
+.sort .active-sort::before {
+  background: url("../img/sprite.png") no-repeat;
   background-position: -15px -1446px;
 }
 
