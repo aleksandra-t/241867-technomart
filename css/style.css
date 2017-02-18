@@ -73,11 +73,13 @@ body {
   font-size: 17px;
   line-height: 18px;
   padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-left: 48px;
   width: 270px;
   position: relative;
   border: none;
+  height: 42px;
+  box-sizing: border-box;
 }
 
 .search {
