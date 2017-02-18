@@ -73,7 +73,7 @@ body {
   font-size: 17px;
   line-height: 18px;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   padding-left: 48px;
   width: 270px;
   position: relative;
@@ -882,7 +882,7 @@ input:focus+.search-label {
 
 .product-and-makers-item h3 {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 13px;
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", "Arial", san-serif;
@@ -1078,7 +1078,7 @@ input:focus+.search-label {
 
 .about-company {
   padding-top: 76px;
-  padding-bottom: 81px;
+  padding-bottom: 71px;
 }
 
 .left-column {
@@ -1125,7 +1125,7 @@ input:focus+.search-label {
   padding: 0;
   margin-left: 36px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .dashed-list li {
@@ -1171,7 +1171,7 @@ input:focus+.search-label {
 }
 
 .map img {
-  margin-bottom: 47px;
+  margin-bottom: 37px;
   width: 300px;
   height: 158px;
 }
@@ -1438,11 +1438,12 @@ input:focus+.search-label {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
-  padding: 25px 0;
+  padding-top: 28px;
+  padding-bottom: 29px;
   padding-left: 29px;
   background: #f2f6f8;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: #32425c;
 }
 
@@ -1553,7 +1554,7 @@ input:focus+.search-label {
 
 .filter-block h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
@@ -1759,7 +1760,7 @@ input[type="submit"] {
 
 .catalog-perforators {
   width: 700px;
-  margin-bottom: 22px auto;
+  margin-bottom: 22px;
 }
 
 .filter-product {
@@ -1816,7 +1817,7 @@ input[type="submit"] {
 
 .about-product {
   padding-top: 65px;
-  padding-bottom: 67px;
+  padding-bottom: 65px;
   background: #f2f6f8;
   color: #000000;
 }
